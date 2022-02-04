@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 480px;
+  height: 480px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  width: 480px;
+  height: 480px;
+  border-radius: 8px;
+  background-color: rgb(197, 197, 197);
+}
+.celd-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107.5px;
+  height: 107.5px;
+  border-radius: 6px;
+}
+.celd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107.5px;
+  height: 107.5px;
+  border-radius: 6px;
+  background-color: rgb(240, 240, 240);
+  font-size: 40px;
+  font-family: Roboto;
+}
+.info {
+  text-align: center;
+  font-size: 40px;
+  font-family: roboto;
+  padding: 10px;
+}
+:root {
+  --val-2: hsl(0, 84%, 66%);
+  --val-4: hsl(36, 97%, 69%);
+  --val-8: hsl(59, 83%, 67%);
+  --val-16: hsl(101, 84%, 71%);
+  --val-32: hsl(157, 84%, 66%);
+  --val-64: hsl(184, 75%, 62%);
+  --val-128: hsl(258, 84%, 71%);
+  --val-256: hsl(204, 84%, 59%);
+  --val-512: hsl(323, 84%, 71%);
+  --val-1024: hsl(177, 84%, 71%);
+  --val-2048: hsl(172, 86%, 60%);
+}
+
+.celd.val-2 {
+  background: var(--val-2);
+}
+
+.celd.val-4 {
+  background: var(--val-4);
+}
+
+.celd.val-8 {
+  background: var(--val-8);
+}
+
+.celd.val-16 {
+  background: var(--val-16);
+}
+
+.celd.val-32 {
+  background: var(--val-32);
+}
+
+.celd.val-64 {
+  background: var(--val-64);
+}
+
+.celd.val-128 {
+  background: var(--val-128);
+}
+
+.celd.val-256 {
+  background: var(--val-256);
+}
+
+.celd.val-512 {
+  background: var(--val-512);
+}
+
+.celd.val-1024 {
+  background: var(--val-1024);
+}
+.celd.val-2048 {
+  background: var(--val-2048);
+}
