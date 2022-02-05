@@ -176,7 +176,7 @@ function showGameOver(matrixData) {
 let { matrixCelds, matrixData } = createBoard();
 let score = 0;
 
-addEventListener("keydown", (event) => {
+$(window).on("keydown",(event) => {
   const code = event.keyCode;
   if (code == 38) {
     moveMatrix(matrixData, { x: 0, y: -1 });
@@ -212,7 +212,7 @@ addEventListener("keydown", (event) => {
 
     //DOWN
   }
-});
+})
 
 GenerateRandomValues(matrixData, matrixCelds);
 GenerateRandomValues(matrixData, matrixCelds);
