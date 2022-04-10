@@ -218,7 +218,34 @@ window.addEventListener("touchstart",(event)=>{
   let touch = event.touches[0];
   let x = touch.clientX;
   let y = touch.clientY;
-  if (x>){
+  if (x < window.innerWidth && x > window.innerWidth - 100){
+  moveMatrix(matrixData, { x: 1, y: 0 });
+
+    setMatrixDataToMatrixCelds(matrixData, matrixCelds);
+
+    GenerateRandomValues(matrixData, matrixCelds);
+
+    updateScore();
+
+    showGameOver(matrixData)
+  }
+  if(x > 0 && x < 100){
+  moveMatrix(matrixData, { x: -1, y: 0 });
+
+    setMatrixDataToMatrixCelds(matrixData, matrixCelds);
+
+    GenerateRandomValues(matrixData, matrixCelds);
+
+    updateScore();
+
+    showGameOver(matrixData);
+  }
+  if (y < window.innerHeight && y > window.innerHeight - 100){
+
+  
+
+  }
+  if(y > 0 && y < 100){
   
   }
   
