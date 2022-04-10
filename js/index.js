@@ -242,11 +242,27 @@ window.addEventListener("touchstart",(event)=>{
   }
   if (y < window.innerHeight && y > window.innerHeight - 100){
 
-  
+  moveMatrix(matrixData, { x: 0, y: 1});
+
+    setMatrixDataToMatrixCelds(matrixData, matrixCelds);
+
+    GenerateRandomValues(matrixData, matrixCelds);
+
+    updateScore();
+
+    showGameOver(matrixData);
 
   }
   if(y > 0 && y < 100){
-  
+  moveMatrix(matrixData, { x: 0, y: -1 });
+
+    setMatrixDataToMatrixCelds(matrixData, matrixCelds);
+
+    GenerateRandomValues(matrixData, matrixCelds);
+
+    updateScore();
+
+    showGameOver(matrixData);
   }
   
 })
