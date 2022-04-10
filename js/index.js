@@ -214,5 +214,15 @@ $(window).on("keydown",(event) => {
   }
 })
 
+window.addEventListener("touchstart",(event)=>{
+  let touch = event.touches[0];
+  let x = touch.clientX;
+  let y = touch.clientY;
+  if (x>){
+  
+  }
+  
+})
+
 GenerateRandomValues(matrixData, matrixCelds);
 GenerateRandomValues(matrixData, matrixCelds);
