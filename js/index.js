@@ -218,7 +218,7 @@ window.addEventListener("touchstart",(event)=>{
   let touch = event.touches[0];
   let x = touch.clientX;
   let y = touch.clientY;
-  if (x < window.innerWidth && x > window.innerWidth - 100){
+  if (x < window.innerWidth && x > window.innerWidth - 300){
   moveMatrix(matrixData, { x: 1, y: 0 });
 
     setMatrixDataToMatrixCelds(matrixData, matrixCelds);
@@ -229,7 +229,7 @@ window.addEventListener("touchstart",(event)=>{
 
     showGameOver(matrixData)
   }
-  if(x > 0 && x < 100){
+  if(x > 0 && x < 300){
   moveMatrix(matrixData, { x: -1, y: 0 });
 
     setMatrixDataToMatrixCelds(matrixData, matrixCelds);
@@ -240,7 +240,7 @@ window.addEventListener("touchstart",(event)=>{
 
     showGameOver(matrixData);
   }
-  if (y < window.innerHeight && y > window.innerHeight - 100){
+  if (y < window.innerHeight && y > window.innerHeight - 300){
 
   moveMatrix(matrixData, { x: 0, y: 1});
 
@@ -253,7 +253,7 @@ window.addEventListener("touchstart",(event)=>{
     showGameOver(matrixData);
 
   }
-  if(y > 0 && y < 100){
+  if(y > 0 && y < 300){
   moveMatrix(matrixData, { x: 0, y: -1 });
 
     setMatrixDataToMatrixCelds(matrixData, matrixCelds);
